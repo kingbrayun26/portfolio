@@ -1,0 +1,59 @@
+body {
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+    font-family: 'Georgia', serif;
+    padding: 20px;
+}
+
+.quiz-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #2a2a2a;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+h1 {
+    text-align: center;
+    color: #d4af37; /* Ancient gold look */
+}
+
+.question {
+    margin-bottom: 25px;
+}
+
+p {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+label {
+    display: block;
+    margin: 8px 0;
+    cursor: pointer;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #d4af37;
+    color: #1a1a1a;
+    border: none;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #bfa030;
+}
+
+#results {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: bold;
+}

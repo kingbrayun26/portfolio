@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TimeSplitters 2: Web Edition</title>
+    <link rel="stylesheet" href="TS.css">
+</head>
+<body>
+
+    <!-- START SCREEN -->
+    <div id="start-screen" class="screen">
+        <h1 class="game-title">TIMESPLITTERS 2</h1>
+        <h2 class="subtitle">WEB ARCADE EDITION</h2>
+        <p class="mission-brief">
+            <strong>MISSION: CHICAGO 1932</strong><br>
+            Secure the Time Crystal and escape through the Time Portal before the TimeSplitters hunt you down!
+        </p>
+        <div class="controls-guide">
+            <p><strong>Controls:</strong> Arrow Keys to Move</p>
+            <p><strong>Objective:</strong> Grab the blue Crystal, then exit through the glowing purple Portal!</p>
+        </div>
+        <button id="start-btn" class="retro-btn">START MISSION</button>
+    </div>
+
+    <!-- MIDDLE SCREEN (GAMEPLAY) -->
+    <div id="game-screen" class="screen hidden">
+        <div class="ui-bar">
+            <div>HEALTH: <span id="health-ui">100</span>%</div>
+            <div>OBJECTIVE: <span id="objective-ui">FIND THE CRYSTAL!</span></div>
+        </div>
+        <canvas id="gameCanvas" width="800" height="500"></canvas>
+    </div>
+
+    <!-- END SCREEN -->
+    <div id="end-screen" class="screen hidden">
+        <h1 id="end-title" class="game-title">MISSION ACCOMPLISHED</h1>
+        <p id="end-message" class="mission-brief"></p>
+        <button id="restart-btn" class="retro-btn">RETRY MISSION</button>
+    </div>
+
+    <script src="TS.js"></script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jak & Daxter Quiz</title>
+    <link rel="stylesheet" href="JAD.css">
+</head>
+<body>
+    <div class="quiz-container" id="quiz-container">
+        <h1>Jak and Daxter: The Lost Frontier</h1>
+        <!-- Question Section -->
+        <div id="question-box">
+            <h2 id="question-text">Loading question...</h2>
+            <div id="options-container" class="options-grid">
+                <!-- Buttons will be injected here by JavaScript -->
+            </div>
+        </div>
+
+        <!-- Progress and Next Button -->
+        <div class="quiz-footer">
+            <span id="progress-text">Question 1 of 5</span>
+            <button id="next-btn" style="display: none;">Next Question</button>
+        </div>
+
+        <!-- End Screen -->
+        <div id="score-container" style="display: none;">
+            <h2>Quiz Complete!</h2>
+            <p id="final-score">Your Score: 0 / 5</p>
+            <button id="restart-btn">Restart Quiz</button>
+        </div>
+    </div>
+    
+    <script src="JAD.js"></script>
+</body>
+</html>

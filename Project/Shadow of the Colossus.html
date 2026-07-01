@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadow of the Colossus Quiz</title>
+    <link rel="stylesheet" href="SOTC.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>Shadow of the Colossus Quiz</h1>
+        <form id="quizForm">
+            
+            <!-- Question 1: Start of the Story -->
+            <div class="question">
+                <p>1. At the start of the story, why does Wander travel to the Forbidden Lands?</p>
+                <label><input type="radio" name="q1" value="A"> To destroy the Colossi for glory</label>
+                <label><input type="radio" name="q1" value="B"> To resurrect a girl named Mono</label>
+                <label><input type="radio" name="q1" value="C"> To find a hidden treasure</label>
+            </div>
+
+            <!-- Question 2: End of the Story -->
+            <div class="question">
+                <p>2. At the end of the story, what happens to Wander after Dormin is sealed?</p>
+                <label><input type="radio" name="q1" value="wrong1"> He becomes the king of the land</label>
+                <label><input type="radio" name="q2" value="A"> He turns into a giant stone colossus permanently</label>
+                <label><input type="radio" name="q2" value="B"> He is reincarnated as a horned baby</label>
+                <label><input type="radio" name="q2" value="C"> He safely escapes back across the bridge on Agro</label>
+            </div>
+
+            <button type="button" onclick="checkAnswers()">Submit Quiz</button>
+        </form>
+
+        <div id="results"></div>
+    </div>
+
+    <script src="SOTC.js"></script>
+</body>
+</html>

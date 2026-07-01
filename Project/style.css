@@ -1,0 +1,148 @@
+/* When someone enters your game, you only want them to see the opening and the option buttons. The code below will use the display property to hide certain parts of the story. Remove the comments from the code below when you're ready for that step!*/
+
+
+.option-one-screen, 
+.option-two-screen, 
+.option-one-end, 
+.option-two-end 
+.options-screen {
+   display:block;
+}
+
+
+/* Feel free to change any of the styling below!*/
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the body with a background color or image if desired */
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+}
+
+
+
+.my-button {
+  /* Makes the link behave like a block/button element */
+  display: inline-block; 
+  
+  /* Adds spacing inside and sets colors */
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  
+  /* Removes the default underline from the link text */
+  text-decoration: none; 
+  
+  /* Rounds the corners and adds a pointer cursor */
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Changes the background color when hovering over the button */
+.my-button:hover {
+  background-color: #0056b3;
+}
+
+
+
+/* Style the title of your story */
+.title {
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: blue
+}
+
+/* Style the story opening container */
+.story-opening {
+    background-color: white;
+    border: 1px solid blue;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Style the story image */
+.story-opening img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Style the story opening message */
+.story-opening h1 {
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+/* Style the buttons container */
+.buttons {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Style the option buttons */
+button {
+    font-size: 16px;
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.parent container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+button:hover {
+    background-color: #0056b3;
+    cursor: pointer;
+}
+
+/* Style the screens for option one and option two */
+.option-one-screen,
+.option-two-screen,
+.option-one-end,
+.option-two-end {
+    background-color: blue;
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
+}
+
+/* Style the images in the screens */
+.option-one-screen img,
+.option-two-screen img,
+.option-one-end img,
+.option-two-end img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Style the text in the screens */
+.option-one-screen h1,
+.option-two-screen h1,
+.option-one-end h1,
+.option-two-end h1 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
