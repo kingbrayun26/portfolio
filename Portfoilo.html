@@ -5,40 +5,52 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Brayun Jones Portfolio</title>
   <link rel="stylesheet" href="Portfolio.css">
-  
-
-<div id="gta-splash">
-    <div class="splash-content">
-        <h1>Welcome To my Portfolio</h1>
-        <p>Enjoy the music while you explore my work!</p>
-        <!-- Audio source: Replace with the actual URL or local path to your GTA 6 theme audio -->
-        <audio id="gta-theme" src="GTA 6 - Official Main Theme Music.mp3" loop></audio> // Copyright 2026 By Rockstar Games
-        <button id="start-btn">START GAME</button>
-    </div>
-</div>
-     <script src="audio.js"></script>
-  
-  
-
 </head>
-        <button id="stop-btn">STOP MUSIC</button>
+<body>
+  <div id="splash-screen" class="splash">
+    <div class="splash-content">
+        <h1>Welcome To Brayun Jones Portfolio</h1>
+        <p>Click below to go to the main site.</p>
+        <button id="enter-btn">Enter Site</button>
+    </div>
+  </div>
+
+  <audio id="background-music" src="GTA 6 - Official Main Theme Music.mp3" loop></audio>
+  <script src="audio.js"></script>
+
+</div>
+  
+<button id="mute-btn" class="button" aria-label="Mute background music">🔊</button>
+</head>
 
 <body>
   <header>
     <div class="container">
       <div class="header">
-      <div class="brand">
-        <h1>Brayun Jones</h1>
+        <div class="brand">
+          <h1>Brayun Jones</h1>
+        </div>
+        <nav aria-label="Main navigation">
+          <ul>
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="accessibility-controls" aria-label="Page zoom controls">
+          <div class="zoom-display">
+            <span id="zoom-level-display" aria-live="polite">100%</span>
+          </div>
+          <div class="zoom-buttons">
+            <button id="zoom-in-btn" class="button zoom-btn" aria-label="Zoom in" title="Increase text size">A+</button>
+            <button id="zoom-out-btn" class="button zoom-btn" aria-label="Zoom out" title="Decrease text size">A−</button>
+            <button id="zoom-reset-btn" class="button zoom-btn reset-btn" aria-label="Reset zoom" title="Reset to default">Reset</button>
+          </div>
+          <script src="accs.js"></script>
+        </div>
       </div>
-      <nav>
-        <ul>
-          <li><a href="#home" class="active">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><a href="#">Skills</a></li>
-        </ul>
-      </nav>
     </div>
   </header>
 
@@ -46,8 +58,8 @@
     <section id="home" class="hero">
       <div>
         <h2>Welcome to my portfolio</h2>
-      <img src="King Brayun.PNG" class="circle-img" alt="Portrait of Brayun Jones">
-        <p>Hi, I'm Brayun. I build polished, accessible websites with clear messaging and strong visuals.</p>
+        <img src="King Brayun.PNG" class="circle-img" alt="Portrait of Brayun Jones">
+        <h4>Hi, I'm Brayun. I build polished, accessible websites with clear messaging and strong visuals.</h4>
         <div class="buttons">
           <a class="btn" href="#projects">View Projects</a>
           <a class="btn" href="#contact">Get in Touch</a>
@@ -62,38 +74,41 @@
     </section>
 
     <section id="about">
+    <article class="card">
       <h2 class="section-title">About Me</h2>
       <div class="about-content">
       <img src="Brayan Jones_2.jpg" class="circle-img" alt="Portrait of Brayun Jones">
-      <p>I'm Brayun Jones, I recently graduated from Benjamin Bosse High School, Growing up in Indianapolis I went to school there and made a good childhood with friends and family. I'm pursuing a career in web development, cybersecurity, and computer science, with a focus on building secure, accessible, and user-friendly applications. I'm committed to continuous learning and staying current with industry trends to deliver innovative solutions that make a real impact.</p>
+      <img src="Assets\bossehighschool.webp" class="image-rectangle" alt="Portrait of Bosse High School">
+      <h2>I'm Brayun Jones, I recently graduated from Benjamin Bosse High School, Growing up in Indianapolis I went to school there and made a good childhood with friends and family. I'm pursuing a career in web development, cybersecurity, and computer science, with a focus on building secure, accessible, and user-friendly applications. I'm committed to continuous learning and staying current with industry trends to deliver innovative solutions that make a real impact.</h2>
         <div>
+        </article>
 
         </div>
-      </div>
+      </article>
     </section>
 
     <section id="projects">
       <h2 class="section-title">Projects</h2>
       <div class="card-grid">
         <article class="card">
-          <img class="project-image" src="Screenshot 2026-06-29 194515.png" alt="Climate change project thumbnail">
+          <img class="project-image" src="Assets\Screenshot 2026-06-29 194515.png" alt="Climate change project thumbnail">
           <h3>Website for Change</h3>
           <p>A landing page with bold imagery and clear calls to action.</p>
-          <p><a href="climate.html">Open project</a></p>
+          <p><a href="Project\climate.html">Open project</a></p>
         </article>
 
         <article class="card">
-          <img class="project-image" src="Screenshot 2026-06-30 153252.png" alt="Story of PS2 Games project thumbnail">
-          <h3>Chose Your Own Adventure On PS2</h3>
-          <p>A simple portfolio layout built for a student showcase.</p>
-          <p><a href="index.html">View project</a></p>
+          <img class="project-image" src="Assets\Screenshot 2026-06-30 153252.png" alt="PS2 game portfolio thumbnail">
+          <h3>Choose Your Own Adventure on PS2</h3>
+          <p>You're able to create immersive gaming experiences.</p>
+          <p><a href="Project\ps2.html">View project</a></p>
         </article>
 
         <article class="card">
-        <img class="project-image" src="Screenshot 2026-07-01 150841.png" alt="Story of PS2 Games project thumbnail">
+          <img class="project-image" src="Assets\Screenshot 2026-07-01 150841.png" alt="Challenge project thumbnail">
           <h3>Challenge Project</h3>
           <p>A project designed to push my design and development skills to the limit.</p>
-          <p><a href="index.html">View project</a></p>
+          <p><a href="Project\quiz.html">View project</a></p>
         </article>
 
         <article class="card">
@@ -105,23 +120,55 @@
       </div>
     </section>
 
+    <section id="skills">
+      <h2 class="section-title">Skills</h2>
+      <article class="card">
+        <div class="skill-card">
+          <h3>Web Development</h3>
+          <p>HTML, CSS, JavaScript, responsive design, and accessible UI.</p>
+        </div>
+        <div class="skill-card">
+          <h3>Cybersecurity</h3>
+          <p>Secure coding practices, risk awareness, and privacy-first thinking.</p>
+        </div>
+        <div class="skill-card">
+          <img src="" alt="Tools icon" class="circle-img">
+          <h3>Tools</h3>
+          <p>Git, VS Code, browser developer tools, and project collaboration workflows.</p>
+        </div>
+      </article>
+    </section>
+
     <section id="contact">
       <h2 class="section-title">Contact</h2>
       <div class="contact-grid">
         <div class="card">
-          <h3>Email</h3>
+          <h3>Contact</h3>
           <p><a href="mailto:brayun.kk@gmail.com">brayun.kk@gmail.com</a></p>
+          <p>Phone: (812)-454-8331</p>
         </div>
         <div class="card">
           <h3>Availability</h3>
           <p>Open for freelance work and project collaborations across the US.</p>
         </div>
         <div class="card">
-          <h3>Contact</h3>
-          <a href="https://www.linkedin.com/in/brayun-jones-1a0b3b1b6/" target="_blank" rel="noopener">LinkedIn</a>
-          <a href="https://youtube.com/@kingbrayun26?si=tocwtmwp2_nYsxRl" target="_blank" rel="noopener">YouTube</a>
-          <a href="https://github.com/kingbrayun26" target="_blank" rel="noopener">GitHub</a>
-          <a href="https://www.instagram.com/kingbrayun26/" target="_blank" rel="noopener">Instagram</a>
+          <h3>Connect</h3>
+            <a href="https://www.linkedin.com/in/brayun-jones-1a0b3b1b6/" target="_blank" rel="noopener" class="social-link">
+              <img src="" alt="LinkedIn" class="social-icon">
+              <span>LinkedIn</span>
+            </a>
+            <a href="https://www.youtube.com/@kingbrayun26" target="_blank" rel="noopener" class="social-link">
+              <img src="" alt="YouTube" class="social-icon">
+              <span>YouTube</span>
+            </a>
+            <a href="https://github.com/kingbrayun26" target="_blank" rel="noopener" class="social-link">
+              <img src="" alt="GitHub" class="social-icon">
+              <span>GitHub</span>
+            </a>
+            <a href="https://www.instagram.com/kingbrayun26/" target="_blank" rel="noopener" class="social-link">
+              <span>Instagram</span>
+            </a>
+          </p>
         </div>
       </div>
     </section>
@@ -132,6 +179,7 @@
       <p>© 2026 Brayun Jones. Simple, clean, and engaging portfolio experience.</p>
     </div>
   </footer>
+
 </body>
 </html>
 

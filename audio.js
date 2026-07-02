@@ -1,27 +1,22 @@
-const startBtn = document.getElementById('start-btn');
-const stopBtn = document.getElementById('stop-music-btn');
-const splashScreen = document.getElementById('gta-splash');
-const bgMusic = document.getElementById('gta-theme');
+document.addEventListener('DOMContentLoaded', () => {
+    const splashScreen = document.getElementById('splash-screen');
+    const enterBtn = document.getElementById('enter-btn');
+    const backgroundMusic = document.getElementById('background-music');
+    const mainContent = document.getElementById('main-content');
 
-// When user clicks the Start button
-startBtn.addEventListener('click', () => {
-    // Play the music
-    bgMusic.play().catch(error => {
-        console.log("Autoplay was prevented, but user gesture will start it.");
+    enterBtn.addEventListener('click', () => {
+        // 1. Play the music
+        backgroundMusic.play().catch(error => {
+            console.log("Autoplay prevented:", error);
+        });
+
+        // 2. Hide the splash screen
+        splashScreen.style.opacity = 0;
+        
+        // 3. Remove from DOM after transition and show main content
+        setTimeout(() => {
+            splashScreen.style.display = 'none';
+            mainContent.style.display = 'block';
+        }, 500); // Matches the CSS transition time
     });
-
-    // Fade out splash screen
-    splashScreen.classList.add('hidden');
-
-    // Remove splash screen from DOM entirely after fade out
-    setTimeout(() => {
-        splashScreen.style.display = 'none';
-    }, 500);
 });
-
-// When user clicks the stop music button
-stopBtn.addEventListener('click', () => {
-    bgMusic.pause();         // Pauses the track
-    bgMusic.currentTime = 0; // Resets it to the beginning
-});
-
